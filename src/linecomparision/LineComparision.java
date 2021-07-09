@@ -4,31 +4,7 @@ import java.util.Scanner;
 
 public class LineComparision {
 
-	public static void main(String[] args) {
-		System.out.println("Welcome to Line Comparision Computation program");
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter co-ordinate x1 : ");
-		int x1 = sc.nextInt();
-		System.out.println("Enter co-ordinate y1 : ");
-		int y1 = sc.nextInt();
-		System.out.println("Enter co-ordinate x2 : ");
-		int x2 = sc.nextInt();
-		System.out.println("Enter co-ordinate y2 : ");
-		int y2 = sc.nextInt();
-		System.out.println("Enter x co-ordinate of third point: ");
-		int p1 = sc.nextInt();
-		System.out.println("Enter y co-ordinate of third point: ");
-		int q1 = sc.nextInt();
-		System.out.println("Enter x co-ordinate of forth point: ");
-		int p2 = sc.nextInt();
-		System.out.println("Enter y co-ordinate of forth point: ");
-		int q2 = sc.nextInt();
-		sc.close();
-
-		LineComparision lc = new LineComparision();
-		lc.lengthOfLines(x1, y1, x2, y2, p1, q1, p2, q2);
-	}
-
+	
 	private void lengthOfLines(int x1, int y1, int x2, int y2, int p1, int q1, int p2, int q2) {
 		Double length_of_line1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 		Double length_of_line2 = Math.sqrt((p2 - p1) * (p2 - p1) + (q2 - q1) * (q2 - q1));
@@ -59,4 +35,30 @@ public class LineComparision {
 		else
 			System.out.println("length of both lines are equal.");
 	}
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to Line Comparision Computation program");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter co-ordinate x1 : ");
+		int x1 = sc.nextInt();
+		System.out.println("Enter co-ordinate y1 : ");
+		int y1 = sc.nextInt();
+		System.out.println("Enter co-ordinate x2 : ");
+		int x2 = sc.nextInt();
+		System.out.println("Enter co-ordinate y2 : ");
+		int y2 = sc.nextInt();
+		System.out.println("Enter x co-ordinate of third point: ");
+		int p1 = sc.nextInt();
+		System.out.println("Enter y co-ordinate of third point: ");
+		int q1 = sc.nextInt();
+		System.out.println("Enter x co-ordinate of forth point: ");
+		int p2 = sc.nextInt();
+		System.out.println("Enter y co-ordinate of forth point: ");
+		int q2 = sc.nextInt();
+		sc.close();
+
+		LineComparision lc = new LineComparision();
+		lc.lengthOfLines(x1, y1, x2, y2, p1, q1, p2, q2);
+	}
+
 }
